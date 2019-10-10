@@ -1,0 +1,10 @@
+# Project
+*.png
+*.txt
+
+# Beckhoff's TwinCAT 2 projects
+*.dfr
+*.pro
+*.bak
+*.ci
+*.wbp

@@ -1,0 +1,10 @@
+MACRO
+MacroName: 'Git Commit'
+MacroMenu: '&Commit'
+MacroCmd: 'file save'
+MacroCmd: 'query off ok'
+MacroCmd: 'replace yesall'
+MacroCmd: 'project expmul ~ProjectNameHere'
+MacroCmd: 'system git add *'
+MacroCmd: 'system git commit -m "%date%-%time%"'
+END_MACRO
