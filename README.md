@@ -20,7 +20,11 @@ U should `git branch` or `git checkout` before running `+restore.cmd`
 
 Open options menu in the `PLC Control` then add [Git.mac](https://github.com/nikvoronin/Tc2_Git/blob/master/Git.mac) as a macrolibrary to the working project: `Project → Options → Macros → Macrolibrary... → Include...`
 
+![00_macro](https://user-images.githubusercontent.com/11328666/66593447-b295cd00-eb9f-11e9-9c52-5343585a19a1.png)
+
 Use it under the `Edit → Macros → Git → Commit`
+
+![01_macro_menu](https://user-images.githubusercontent.com/11328666/66593496-cb05e780-eb9f-11e9-80ed-ebdeeacb4cb0.png)
 
 ## Reading List (eng, ru)
 
