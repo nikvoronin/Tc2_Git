@@ -4,17 +4,22 @@
 
 Should close `PLC Control` before using `+commit.cmd`
 
-* `+commit.cmd`
-  1. scan for .pro files
-  1. silently do overwriting export .pro to .exp
+* [+commit.cmd](https://github.com/nikvoronin/Tc2_Git/blob/master/%2Bcommit.cmd)
+  1. scan for the .pro files
+  1. silently do overwriting export from the .pro to the .exp
   1. git add * (all)
   1. git commit -m _with-current-date-n-time_
 
 U should `git branch` or `git checkout` before running `+restore.cmd`
 
-* `+restore.cmd`
+* [+restore.cmd](https://github.com/nikvoronin/Tc2_Git/blob/master/%2Brestore.cmd)
   1. scan for .pro files
-  1. silently do overwriting import from .exp to .pro
+  1. silently do overwriting import from the .exp files to the .pro one
+
+## Macro
+
+Open options menu in the `PLC Control` then add [Git.mac](https://github.com/nikvoronin/Tc2_Git/blob/master/Git.mac) as a macrolibrary to the working project: `Project → Options → Macros → Macrolibrary... → Include...`
+Use it under the `Edit → Macros → Git → Commit`
 
 ## Reading List (eng, ru)
 
