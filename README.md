@@ -19,7 +19,7 @@
 ## Project Structure
 
 ```
-ProjectDirectory
+.
 ├─ .git
 │  └─ ...
 ├─ .gitignore
