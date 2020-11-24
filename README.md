@@ -16,6 +16,31 @@
   1. looking for .pro files inside `%ProjectDir%`
   1. import from the .exp files to the .pro one
 
+## Project Structure
+
+```
+ProjectDirectory
+├─ .git
+│  └─ ...
+├─ .gitignore
+├─ +commit.cmd
+├─ +restore.cmd
+├─ Git.mac
+├─ README.md
+└─ src
+   ├─ foo.pro
+   ├─ bar.pro
+   ├─ bar.tpy
+   ├─ ~foo
+   │  ├─ FILE111.EXP
+   │  ├─ FILE222.EXP
+   │  └─ ...
+   └─ ~bar
+      ├─ FILE111.EXP
+      ├─ FILE222.EXP
+      └─ ...
+```
+
 ## Macro
 
 Open options menu in the `PLC Control` then add [Git.mac](https://github.com/nikvoronin/Tc2_Git/blob/master/Git.mac) as a macrolibrary to the working project: `Project → Options → Macros → Macrolibrary... → Include...`
