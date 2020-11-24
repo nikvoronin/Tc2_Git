@@ -1,15 +1,15 @@
-rem https://infosys.beckhoff.com/content/1033/tcplccontrol/html/tcplcctrl_addcommandline.htm
 @echo off
 SETLOCAL
 set TcPlcCtrl="C:\TwinCAT\Plc\TCatPlcCtrl.exe"
+set ProjectDir=.\src
 
-if exist "*.pro" (
-	FOR %%i IN ("*.pro") DO (
+if exist %ProjectDir%\*.pro (
+	FOR %%i IN (%ProjectDir%\*.pro) DO (
 		CALL :ExportProject %%~ni
 	)
 )
 
-del %cmd%
+del "%cmd%"
 
 git add *
 git commit -m '%date%-%time%'
@@ -20,10 +20,10 @@ exit /b
 
 set ProjectName=%1
 
-set ProjectPath=%ProjectName%.pro
-set cmd=__project_export.tmp
-set ExportTo=~%ProjectName%
+set ProjectPath=%ProjectDir%\%ProjectName%.pro
+set ExportTo=%ProjectDir%\~%ProjectName%
 
+set cmd=__project_export.tmp
 echo replace yesall > %cmd%
 echo query off ok >> %cmd%
 echo file open %ProjectPath% >> %cmd%
