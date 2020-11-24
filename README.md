@@ -2,19 +2,19 @@
 
 ## How To...
 
-Should close `PLC Control` before using `+commit.cmd`
+> It is a good idea to close `PLC Control` before using `+commit.cmd`
 
-* [+commit.cmd](https://github.com/nikvoronin/Tc2_Git/blob/master/%2Bcommit.cmd)
-  1. scan for the .pro files
-  1. silently do overwriting export from the .pro to the .exp
-  1. git add * (all)
-  1. git commit -m _with-current-date-n-time_
+* [+commit.cmd](https://github.com/nikvoronin/Tc2_Git/blob/master/%2Bcommit.cmd) does:
+  1. looking for the .pro files inside `%ProjectDir%`
+  2. exports several `.exp` files from the one `.pro` file to the `~%ProjectName%` folder
+  3. git add * (all)
+  4. git commit -m _with-current-date-n-time_
 
-U should `git branch` or `git checkout` before running `+restore.cmd`
+> From command line, execute `git branch` or `git checkout` before running `+restore.cmd`
 
-* [+restore.cmd](https://github.com/nikvoronin/Tc2_Git/blob/master/%2Brestore.cmd)
-  1. scan for .pro files
-  1. silently do overwriting import from the .exp files to the .pro one
+* [+restore.cmd](https://github.com/nikvoronin/Tc2_Git/blob/master/%2Brestore.cmd) does:
+  1. looking for .pro files inside `%ProjectDir%`
+  1. import from the .exp files to the .pro one
 
 ## Macro
 
@@ -22,13 +22,17 @@ Open options menu in the `PLC Control` then add [Git.mac](https://github.com/nik
 
 ![00_macro](https://user-images.githubusercontent.com/11328666/66593447-b295cd00-eb9f-11e9-9c52-5343585a19a1.png)
 
-Use it under the `Edit → Macros → Git → Commit`
+After that, you can find it under the `Edit → Macros → Git → Commit` menu items
 
 ![01_macro_menu](https://user-images.githubusercontent.com/11328666/66593496-cb05e780-eb9f-11e9-80ed-ebdeeacb4cb0.png)
 
+## PLC-Control Command Line
+
+"When TwinCAT PLC Control is started, you can add commands in the command line which will be asserted during execution of the program." Read the rest at the infosys' topic: [Command Line/Command File Commands](https://infosys.beckhoff.com/content/1033/tcplccontrol/html/tcplcctrl_addcommandline.htm)
+
 ## Reading List (eng, ru)
 
-In a random order
+In a random reading order (on your wish)
 
 * Understanding Git Series (eng)
   * [Data Model](https://hackernoon.com/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5)
@@ -38,5 +42,5 @@ In a random order
 * [Сходство и различие между Mercurial и Git](https://habr.com/ru/post/168675/). Почему именно Git?
 * [Git: наглядная справка](https://marklodato.github.io/visual-git-guide/index-ru.html)
 * [Про Git](https://git-scm.com/book/ru/v2). Книга и полное описание работы с Git.
-* [Git How To](https://githowto.com/ru). Интерактивный тур
-* [Got TwinCAT](https://gotwincat.blogspot.com). Пост в блоге.
+* [Git How To](https://githowto.com/ru). Интерактивный тур.
+* [Got TwinCAT](https://gotwincat.blogspot.com/2019/10/git-twincat2-codesys-project-macro-export-import.html). Пост в блоге.
