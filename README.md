@@ -60,10 +60,10 @@ After that, you can find it under the `Edit → Macros → Git → Commit` menu 
 In a random reading order (on your wish)
 
 * Understanding Git Series (eng)
-  * [Data Model](https://hackernoon.com/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5)
-  * [Branching](https://hackernoon.com/understanding-git-branching-2662f5882f9)
-  * [Index](https://hackernoon.com/understanding-git-index-4821a0765cf)
-  * [Git Reset 101](https://hackernoon.com/reset-101-ba05d9e3f2c7)
+  * [Data Model](https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5)
+  * [Branching](https://medium.com/hackernoon/understanding-git-branching-2662f5882f9)
+  * [Index](https://medium.com/hackernoon/understanding-git-index-4821a0765cf)
+  * [Git Reset 101](https://medium.com/hackernoon/reset-101-ba05d9e3f2c7)
 * [Сходство и различие между Mercurial и Git](https://habr.com/ru/post/168675/). Почему именно Git?
 * [Git: наглядная справка](https://marklodato.github.io/visual-git-guide/index-ru.html)
 * [Про Git](https://git-scm.com/book/ru/v2). Книга и полное описание работы с Git.
