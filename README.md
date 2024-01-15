@@ -1,5 +1,7 @@
 # Git for TwinCAT 2 (CoDeSys)
 
+`GoTwinCAT`: [Git Macro for CoDeSys or TwinCAT 2](https://gotwincat.blogspot.com/2019/10/git-twincat2-codesys-project-macro-export-import.html). _// Oct 2019_
+
 ## How To...
 
 > It is a good idea to close `PLC Control` before using `+commit.cmd`
@@ -55,17 +57,9 @@ After that, you can find it under the `Edit → Macros → Git → Commit` menu 
 
 "When TwinCAT PLC Control is started, you can add commands in the command line which will be asserted during execution of the program." Read the rest at the infosys' topic: [Command Line/Command File Commands](https://infosys.beckhoff.com/content/1033/tcplccontrol/html/tcplcctrl_addcommandline.htm)
 
-## Reading List (eng, ru)
+## Understanding Git Series
 
-In a random reading order (on your wish)
-
-* Understanding Git Series (eng)
-  * [Data Model](https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5)
-  * [Branching](https://medium.com/hackernoon/understanding-git-branching-2662f5882f9)
-  * [Index](https://medium.com/hackernoon/understanding-git-index-4821a0765cf)
-  * [Git Reset 101](https://medium.com/hackernoon/reset-101-ba05d9e3f2c7)
-* [Сходство и различие между Mercurial и Git](https://habr.com/ru/post/168675/). Почему именно Git?
-* [Git: наглядная справка](https://marklodato.github.io/visual-git-guide/index-ru.html)
-* [Про Git](https://git-scm.com/book/ru/v2). Книга и полное описание работы с Git.
-* [Git How To](https://githowto.com/ru). Интерактивный тур.
-* [Got TwinCAT](https://gotwincat.blogspot.com/2019/10/git-twincat2-codesys-project-macro-export-import.html). Пост в блоге.
+* [Data Model](https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5)
+* [Branching](https://medium.com/hackernoon/understanding-git-branching-2662f5882f9)
+* [Index](https://medium.com/hackernoon/understanding-git-index-4821a0765cf)
+* [Git Reset 101](https://medium.com/hackernoon/reset-101-ba05d9e3f2c7)
